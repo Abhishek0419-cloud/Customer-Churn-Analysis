@@ -122,7 +122,7 @@ The dataset contains **7043 customer records** with 21 features:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/customer-churn-analysis.git
+git clone https://github.com/Abhishek0419-cloud/customer-churn-analysis.git
 
 # Navigate to project folder
 cd customer-churn-analysis
