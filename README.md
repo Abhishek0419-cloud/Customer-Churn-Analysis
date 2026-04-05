@@ -115,7 +115,7 @@ The dataset contains **7043 customer records** with 21 features:
 ---
 
 ## 📸 Project Preview
-
+![Dashboard](INSIGHT.png)
 ---
 
 ## 🚀 How to Run the Project
