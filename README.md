@@ -19,6 +19,7 @@ Exploratory analysis of 7,043 telecom customers to find who churns and what driv
 | Electronic check payment | 45.3% (credit card auto-pay 15.2%) |
 
 - **89% of all churners are on month-to-month contracts**, and **55% of churners leave within their first 12 months.**
+- **Fiber optic customers churn more even within the same contract type:** among month-to-month customers, Fiber churns at 54.6% vs 32.2% for DSL. Fiber customers also pay more (91.5 vs 58.1 average monthly charge).
 - Gender has no meaningful effect (26.9% vs 26.2%). Streaming TV/Movies and phone service also show little difference.
 
 ## Is the Electronic Check effect real?
@@ -57,7 +58,7 @@ If month-to-month e-check customers (1,850 of them) churned at the auto-pay rate
 ## Limitations
 
 - Findings are associations, not causes. Contract, tenure, internet service and payment method overlap heavily, so the ranking shows where churn concentrates.
-- Fiber optic customers pay more and are more often on flexible contracts, so the Fiber vs DSL gap may reflect price or contract, not the technology.
+- Fiber optic customers pay more and are more often on month-to-month contracts (68.7% vs 50.5% for DSL), but the churn gap remains within month-to-month contracts. Price, service quality or competition could explain it; this dataset cannot say which.
 - The dataset is a snapshot with no churn dates, so time-based analysis is not possible.
 - No predictive model was built. This project is exploratory analysis only.
 
@@ -65,7 +66,7 @@ If month-to-month e-check customers (1,850 of them) churned at the auto-pay rate
 
 - `CCA.ipynb`: full analysis notebook
 - `Dataset.csv`: source data
-- `SUMMARY_AND_RECOMMENDATIONS.pdf`: one-page summary of insights and recommendations
+- `SUMMARY_AND_RECOMMENDATIONS.pdf`: summary of insights and recommendations
 
 ## How to run
 
@@ -73,4 +74,5 @@ If month-to-month e-check customers (1,850 of them) churned at the auto-pay rate
 pip install pandas numpy matplotlib seaborn jupyter
 jupyter notebook CCA.ipynb
 ```
+
 Keep `Dataset.csv` in the same folder as the notebook.
